@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Student Details</title>
+</head>
+
+<body>
+		
+	    <h1>Student Details</h1>
+		<div th:object="${std}">
+			<p>Name  <span th:text="*{name}"></span></p>
+			<p>Age  <span th:text="*{age}"></span></span>
+			<p>Course  <span th:text="*{course}"></span></p>
+			
+		</div>
+
+		
+	
+</body>
+
+</html>
